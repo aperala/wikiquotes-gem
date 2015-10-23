@@ -19,10 +19,7 @@ describe QuoteGetter::Client do
       expect(response).to be_a(Object)
     end
 
-    it "returns the requested page" do
-      response = client.quotes("cats")
-      expect(response).to be_a(String)
-    end
+ 
 
   end
 

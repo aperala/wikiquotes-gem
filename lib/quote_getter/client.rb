@@ -7,8 +7,10 @@ module QuoteGetter
     BASE_URI = "https://en.wikiquote.org/w/api.php"
     
     def quotes(page)
-      response = HTTParty.get(BASE_URI + "?format=json&action=parse&page=#{page}&prop=text")
-      response['parse']['text']['*']
+      headers = {"User-Agent" => "Random New York 1.0(http://randomnewyork.xyz/; randomnewyork@namecheap.com) "}
+      url = (BASE_URI + "?format=json&action=parse&page=#{page}&section=1&prop=wikitext")
+      content = HTTParty.get(url, headers: headers)['parse']['wikitext']['__content__']
+      # return content.scan(/^\* (.*)$/).flatten
     end
 
   end
