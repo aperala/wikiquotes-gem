@@ -8,7 +8,7 @@ module QuoteGetter
     
     def quotes(page)
       response = HTTParty.get(BASE_URI + "?format=json&action=parse&page=#{page}&prop=text")
-      JSON.parse(response.body)
+      response['parse']['text']['*']
     end
 
   end
