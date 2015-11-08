@@ -14,11 +14,10 @@ describe QuoteGetter::Client do
       expect(client).to respond_to(:quotes)
     end
 
-    it "returns a response that is an object" do
+    it "returns a response that is an array" do
       response = client.quotes("cats")
-      expect(response).to be_a(Object)
+      expect(response).to be_a(Array)
     end
-
  
 
   end

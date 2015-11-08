@@ -9,8 +9,10 @@ module QuoteGetter
     def quotes(page)
       headers = {"User-Agent" => "Random New York 1.0(http://randomnewyork.xyz/; randomnewyork@namecheap.com) "}
       url = (BASE_URI + "?format=json&action=parse&page=#{page}&section=1&prop=wikitext")
-      content = HTTParty.get(url, headers: headers)['parse']['wikitext']['__content__']
-      # return content.scan(/^\* (.*)$/).flatten
+      content = HTTParty.get(url, headers: headers)['parse']['wikitext']['*']
+      # results = content.split("\n\n")
+
+      end
     end
 
   end
