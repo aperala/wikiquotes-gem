@@ -10,8 +10,8 @@ module QuoteGetter
       headers = {"User-Agent" => "Random New York 1.0(http://randomnewyork.xyz/; randomnewyork@namecheap.com) "}
       url = (BASE_URI + "?format=json&action=parse&page=#{page}&section=1&prop=wikitext")
       content = HTTParty.get(url, headers: headers)['parse']['wikitext']['*']
-      results = content.split("\n\n")
-
+      results = content.split("\n\n").to_json
+      return JSON.parse(results)
       
     end
 
