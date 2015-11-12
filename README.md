@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```client = QuoteGetter::Client.new
+
+To get an array of quotations from the specified page
+
+```client.quotes("cats")
+
+```client.random_quote(response)
 
 ## Development
 
