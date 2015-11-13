@@ -1,4 +1,5 @@
-# Quote::Getter
+# Wikiquotes wrapper
+A simple API wrapper to use in my projects.
 
 ## Installation
 
@@ -18,16 +19,16 @@ Or install it yourself as:
 
 ## Usage
 
-```client = QuoteGetter::Client.new
+`client = QuoteGetter::Client.new`
 
 To get an array of quotations from the specified page, enter the topic as a string, e.g.,
 
-```client.quotes("cats")
+`client.quotes("cats")`
 
 To return a random quotation from the response:
 
-```response = client.quotes("cats")
-```client.random_quote(response)
+`response = client.quotes("cats")`
+`client.random_quote(response)`
 
 ## Development
 
