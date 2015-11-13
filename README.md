@@ -28,6 +28,7 @@ To get an array of quotations from the specified page, enter the topic as a stri
 To return a random quotation from the response:
 
 `response = client.quotes("cats")`
+
 `client.random_quote(response)`
 
 ## Development
