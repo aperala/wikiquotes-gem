@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'quote_getter'
+gem 'quote_getter', github: 'aperala/quote_getter'
 ```
 
 And then execute:
@@ -14,16 +14,19 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install quote_getter
+    $ gem install github: 'aperala/quote_getter'
 
 ## Usage
 
 ```client = QuoteGetter::Client.new
 
-To get an array of quotations from the specified page
+To get an array of quotations from the specified page, enter the topic as a string, e.g.,
 
 ```client.quotes("cats")
 
+To return a random quotation from the response:
+
+```response = client.quotes("cats")
 ```client.random_quote(response)
 
 ## Development
