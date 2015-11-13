@@ -6,7 +6,7 @@ A simple API wrapper to use in my projects.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'wikiquotes-gem', github: 'aperala/wikiquotes-gem'
+gem 'quote_getter', github: 'aperala/wikiquotes-gem'
 ```
 
 And then execute:
