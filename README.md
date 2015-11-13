@@ -6,7 +6,7 @@ A simple API wrapper to use in my projects.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'quote_getter', github: 'aperala/quote_getter'
+gem 'wikiquotes-gem', github: 'aperala/wikiquotes-gem'
 ```
 
 And then execute:
@@ -15,7 +15,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install github: 'aperala/quote_getter'
+    $ gem install github: 'aperala/wikiquotes-gem'
 
 ## Usage
 
@@ -39,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/quote-getter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/aperala/wikiquotes-gem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
